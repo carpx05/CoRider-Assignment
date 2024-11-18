@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+crud_app/
+
+# Ignore JSON files
+*.json
+
+# Ignore index files
+*.index
+
+# Ignore database files
+*.db
+
+# Ignore CSV files
+*.csv
