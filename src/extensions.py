@@ -9,10 +9,7 @@ class MongoDB:
         self.db = None
 
     def init_app(self, app):
-        # Use connection string from config
         self.client = MongoClient(app.config['CONNECTION_STRING'], connect=False)
-        
-        # Extract database name from URI or use default
         db_name = app.config.get('MONGO_DBNAME', 'userdb')
         self.db = self.client[db_name]
         print("MongoDB initialized: ", self.db)
